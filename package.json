@@ -1,0 +1,19 @@
+{
+    "name": "js-planner",
+    "version": "1.0.0",
+    "description": "JS planner app",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sean-xiao-zhao7/js-planner.git"
+    },
+    "author": "Sean",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sean-xiao-zhao7/js-planner/issues"
+    },
+    "homepage": "https://github.com/sean-xiao-zhao7/js-planner#readme"
+}
