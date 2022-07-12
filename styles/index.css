@@ -80,7 +80,8 @@ button:focus {
 }
 
 button:hover,
-button:active {
+button:active,
+.alt.button-clicked {
     background: #ff2579;
     border-color: #ff2579;
     color: white;
@@ -91,6 +92,7 @@ li.card {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     padding: 2rem;
     background: white;
+    position: relative;
 }
 
 li:not(:last-child) {
@@ -129,4 +131,33 @@ li:not(:last-child) {
 #finished-projects header h2 {
     color: white;
     margin: 0;
+}
+
+/* tooltip */
+.tooltip {
+    position: absolute;
+    bottom: -25px;
+    opacity: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 2px 2px 8px 1px #ccc;
+    border-radius: 2px;
+    transition: opacity 0.1s;
+}
+
+.tooltip::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+    width: 0;
+    height: 0;
+    bottom: 45px;
+    left: 40px;
 }
