@@ -2,8 +2,10 @@ import ProjectList from "./src/components/ProjectList.js";
 
 class App {
     static init() {
-        const activeProjectList = new ProjectList("active");
-        const finishedProjectList = new ProjectList("finished");
+        new ProjectList("active");
+        new ProjectList("finished");
+
+        const clickme = document.querySelector("#clickme");
     }
 }
 

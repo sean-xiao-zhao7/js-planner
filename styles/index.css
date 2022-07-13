@@ -7,7 +7,10 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 0 1rem 0;
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 1rem;
 }
 
 #main-header {
@@ -33,7 +36,6 @@ footer {
 }
 
 section {
-    margin: 1rem auto;
     width: 40rem;
     max-width: 90%;
 }
